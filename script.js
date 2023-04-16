@@ -1,11 +1,16 @@
-function carregar() {
+    //setTimeout    
+    setInterval(function() {
 
     var inMsg = window.document.getElementById("msg")
     var img = window.document.getElementById("imagem")
     var data = new Date()
-    var hora = data.getHours()
+    var hora = data.getHours();
+    var min = data.getMinutes();
+    var seg = data.getSeconds();
+    var horas = `${hora} Horas ${min} Minutos ${seg} Segundos`
     
-    inMsg.innerHTML = `Agora são ${hora} horas`
+    inMsg.innerHTML = `${horas}` // verificar em casa
+
     if (hora >= 0 && hora < 12) {
         // bom dia
         img.src = 'assets/dia.jpg'
@@ -19,6 +24,5 @@ function carregar() {
         img.src = 'assets/noite.jpg'
         document.body.style.background = '#4f2e24'
     }
-}
 
-
+})

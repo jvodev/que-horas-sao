@@ -16,6 +16,7 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.788);
+    padding-bottom: 50px;
 }
 
 section p  {
@@ -41,4 +42,10 @@ p   {
     border-radius: 1000px;
     height: 350px;
     width: 350px;
+}
+
+#msg    {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    color: rgba(0, 0, 0, 0.548)
 }
